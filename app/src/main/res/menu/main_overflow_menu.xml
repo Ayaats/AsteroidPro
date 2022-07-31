@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/week_Aster"
+        android:title="@string/next_week_asteroids"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/today_Aster"
+        android:title="@string/today_asteroids"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/all_Aster"
+        app:showAsAction="ifRoom"
+        android:title="@string/saved_asteroids" />
+</menu>
