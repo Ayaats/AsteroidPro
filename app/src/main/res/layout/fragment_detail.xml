@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             app:asteroidStatusImage="@{asteroid.potentiallyHazardous}"
-            android:contentDescription="@string/nasa_picture_of_day_content_description_format"
+            android:contentDescription="This image is not the image of the day so this information is confusing. Instead, you should add the information dynamically to inform the user about if the selected asteroid is or not hazardous."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
