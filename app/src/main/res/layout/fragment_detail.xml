@@ -20,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:contentDescription="@string/nasa_picture_of_day_content_description_format"
             app:asteroidStatusImage="@{asteroid.potentiallyHazardous}"
+            android:contentDescription="@string/nasa_picture_of_day_content_description_format"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -34,7 +34,8 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activity_main_image_of_the_day">
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_image_of_the_day"
+            android:contentDescription="@string/today_asteroids">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/close_approach_data_title"
                         android:textColor="@color/default_text_color"
-                        android:contentDescription="@string/close_approach_data_title"/>
+                       />
 
                     <TextView
                         android:id="@+id/close_approach_date"
@@ -59,8 +60,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="@{asteroid.closeApproachDate}"
+                        android:contentDescription="@string/close_approach_data_title"
                         android:textColor="@color/default_text_color"
-                        android:contentDescription="@{asteroid.closeApproachDate}"
                         tools:text="2020-02-01" />
                 </LinearLayout>
 
@@ -82,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/absolute_magnitude_title"
                             android:textColor="@color/default_text_color"
-                            android:contentDescription="@string/absolute_magnitude_title"/>
+                           />
 
                         <TextView
                             android:id="@+id/absolute_magnitude"
@@ -91,6 +92,7 @@
                             android:layout_marginTop="4dp"
                             android:textColor="@color/default_text_color"
                             app:astronomicalUnitText="@{asteroid.absoluteMagnitude}"
+                            android:contentDescription="@string/absolute_magnitude_title"
                             tools:text="25.126 au" />
                     </LinearLayout>
 
@@ -100,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:padding="16dp"
                         app:srcCompat="@drawable/ic_help_circle"
-                        android:contentDescription="TODO" />
+                        android:contentDescription="@string/astronomica_unit_explanation" />
 
                 </LinearLayout>
 
@@ -118,6 +120,7 @@
                     android:layout_marginTop="4dp"
                     android:textColor="@color/default_text_color"
                     app:kmUnitText="@{asteroid.estimatedDiameter}"
+                    android:contentDescription="@string/estimated_diameter_title"
                     tools:text="0.82 km" />
 
                 <TextView
@@ -133,7 +136,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:textColor="@color/default_text_color"
+                    android:contentDescription="@string/relative_velocity_title"
                     app:velocityText="@{asteroid.relativeVelocity}"
+
                     tools:text="11.9 km/s" />
 
                 <TextView
